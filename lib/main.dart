@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_managament_in_life/feature/maps/view/map_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,20 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeView(),
+      home: const MapSelectView(),
     );
-  }
-}
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
